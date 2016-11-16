@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<HTML lang='id'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+<meta content='IE=9; IE=8; IE=7; IE=EDGE; chrome=1' http-equiv='X-UA-Compatible'/>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400italic,400,500,500italic,700,700italic,900%7CMaterial+Icons' rel='stylesheet' type='text/css'/>
+
+<title>Pencarian Kustom | Cloud Intanews</title>
+
+<style type='text/css'>
+/*<![CDATA[*/
+body { max-width: 100%; overflow-x: hidden; }
+.material-icons{ vertical-align: sub;}.material-icons{ vertical-align: sub;}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+ul .label-show {margin:0 auto;padding:0}
+.label-show{list-style:none}
+.label-show:before,.label-show:after{content:"";display:table}
+.label-show:after{clear:both}
+.label-show li{position:relative;float:left;margin:0 12px 8px 0;padding:0;}
+.label-show li:after{position:absolute;top:50%;margin-top:-3px;right:-2px;width:5px;height:6px;opacity:.95;background:#333;border-radius:3px 0 0 3px}
+.label-show a,.label-show span{display:block;box-sizing:border-box}
+.label-show a{color:#000;background:#dc4f92;padding:5px 8px;z-index:1;border-radius:3px 0 0 3px;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);transition:.3s box-shadow ease;-webkit-transition:.3s box-shadow ease;text-shadow:0 0 0}
+.label-show a:hover span{max-width:40px;padding:5px 8px}
+.label-show a:hover {box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);}
+.label-show span{position:absolute;top:0;bottom:0;left:100%;z-index:2;overflow:hidden;max-width:0;opacity:.95;color:#fff;vertical-align:middle;background-color:#333;transition:all .3s ease-out;
+padding:5px 0 5px 2px;border-radius:0 3px 3px 0}
+
+.btn-sidebaramp{display:none}
+#menu a.trigger2::after,#menu a.trigger2:hover::after{border-width:5px 6px;top:20px;width:0;height:0;border-style:solid}
+.comment_body p img,.search-icon{vertical-align:middle}
+#menu a.prett::after,#menu a.trigger2::after,#menu a.trigger2:hover::after,.comment-form p:after{content:""}
+#blog-pager,#comments,#credit,.blog-pager,.clear,.clr{clear:both}
+#navbar-iframe{height:0;visibility:hidden;display:none}
+body{background:url(http://3.bp.blogspot.com/-YkYyiOEe9c4/VY50rAFaCOI/AAAAAAAAhZg/nwwmAdm2KA0/s1600/symphony.png)fixed #EDEDED;color:#444;height:100%;font-family:Roboto,sans-serif;font-size:14px;font-weight:400;line-height:22px;text-decoration:none;margin:0;padding:0}
+a,a:link,a:visited{color:#eb4938;text-decoration:none}
+a:active,a:hover{color:#0058ac;text-decoration:none}
+b,strong{font-weight:500}
+#header-wrapper{background-color:#fff;width:100%;min-height:110px;color:#555;margin:0 auto;padding:0;position:relative}
+#header{float:left;width:212px;margin:0;padding:0}
+#header-inner{margin:0 auto;padding:0}
+#header h1,#header p{font:28px Roboto,sans-serif;text-transform:capitalize;line-height:24px;color:#e74c3c;text-shadow:2px 2px 1px #000;padding:0;margin:0 auto;position:fixed;top:-1000px;left:-1000px;}
+#header h1 a,#header h1.title a:hover{color:#e74c3c;text-decoration:none;opacity:0}
+#header .description{color:#fff;font:12px Roboto,sans-serif;text-shadow:none}
+#menu,#search-form,.page-menu li a,.post h1,.post h2,.post-body,.postmeta,h3.date-header{font-family:Roboto,sans-serif}
+#header img{border:0;margin-top:10px;padding:0}
+#header2{float:right;width:728px;margin:10px 0 5px;text-align:left;color:#555}
+#menu label,#search,.search-icon{text-align:center}
+.header2 .widget{margin:0 auto;padding:0}
+.logo-blog{position:absolute;left:0;bottom:5px}
+#menu li,#menu-wrapper,.content-wrapper,.page-menu,.page-menu li a{position:relative}
+.page-menu{background-color:#0058ac;width:100%;margin:0 auto;padding:0}
+.page-menu ul{list-style:none;color:#fff;width:100%;margin:0 auto;padding:0}
+.page-menu ul li{list-style:none;display:inline-block}
+.page-menu li a{color:#fff;display:block;font-size:15px;font-weight:300;text-decoration:none;text-transform:capitalize;padding:0 10px;height:40px;line-height:40px}
+#menu,#menu input,#menu ul{height:50px}
+.page-menu .selected,.page-menu li a:hover{color:#a0b039;text-decoration:none}
+.content-wrapper{background-color:#fff;width:970px;margin:0 auto;padding:0 20px}
+.outer-wrapper{background-color:#fff;width:100%;margin:0 auto;padding:0}
+.main-wrapper{width:629px;margin-top:20px;float:left;word-wrap:break-word;overflow:hidden}
+.clr{float:none}
+h2{line-height:1.4em;text-transform:none;color:#333;margin:.5em 0 .25em}
+.post{margin:0 auto;padding:0 0 20px 20px}
+.post h1,.post h2{font-size:42px;line-height:1.2em;color:#222;margin:0 0 10px;padding:4px 0;text-transform:capitalize;font-weight:700}
+.post-body,.post-labels,.post-labels a,.postmeta,h3.date-header{font-weight:300}
+.post h1 a,.post h1 a:visited,.post h1 strong,.post h2 a,.post h2 a:visited,.post h2 strong{display:block;text-decoration:none;color:#222}
+.post h1 a:hover,.post h1 strong,.post h2 a:hover,.post h2 strong{color:#eb4938}
+.post-body{padding:0;font-size:16px;margin:0 0 .75em;line-height:1.6em}
+.postmeta,h3.date-header{line-height:1.3em;font-size:12px}
+.post blockquote{line-height:1.6em;color:#333;background:#fff;border-left:20px solid #ccc;margin:10px 10px 10px 20px;padding:10px 15px}
+.author,.author a,.clock a,.comment a{color:#999}
+.post blockquote p{margin:.75em 0}
+.post img,.sidebar1 img,.sidebar2 img{border:0;transition:all .3s ease-in-out}
+.post img:hover,.sidebar1 img:hover,.sidebar2 img:hover{opacity:.7}
+h3.date-header{color:#999;margin:0;padding:0}
+.postmeta{padding:5px 0;float:right;font-style:italic}
+.author{padding:2px}
+.author a:hover,.clock a:hover,.comment a:hover{color:#f4782c}
+.clock{color:#999;padding:2px 0}
+.updated{border-bottom:none}
+.post-labels{margin: 25px 0 0;float:left;display:block;width:100%;color:#999}
+.post-labels a{background:#f2f2f2;line-height:16px;white-space:nowrap;font-size:12px;padding:3px 7px;margin:0 5px 2px 0;border-radius:2px;color:#999}
+.post-labels a:hover{background-color:#e8554e;color:#fff}
+#blog-pager-newer-link{float:left}
+#blog-pager-older-link{float:right}
+.feed-links{clear:both;line-height:2.5em}
+#menu-wrapper{height:50px;width:100%}
+#menu{background:#0058ac;color:#fff}
+#menu li,#menu ul{margin:0;padding:0;list-style:none}
+#menu li{float:left;display:inline}
+#menu li a{font-size:15px;font-weight:500;color:#fff;text-transform:uppercase}
+#menu a{display:block;line-height:50px;padding:0 20px;text-decoration:none;color:#fff}
+#menu li a:hover,#menu li:hover>a{color:#a0b039}
+#menu input{display:none;margin:0;padding:0;width:80px;opacity:0;cursor:pointer}
+#menu label{font-size:30px;display:none;width:35px;height:51px;line-height:51px}
+#menu label span{font-size:13px;position:absolute;left:35px;text-transform:none}
+#menu ul.menus{height:auto;overflow:hidden;width:180px;background:#ddd;position:absolute;z-index:99;display:none;color:#555;text-transform:none}
+#menu a.prett:hover,#menu li:hover>a.prett,#menu ul.menus a:hover{color:#fff;background:#bbb}
+#menu ul.menus a{color:#555;line-height:30px;font-size:14px;padding:0 20px;font-weight:300;text-transform:none}
+.footer h2,.submitbutton{text-transform:capitalize}
+#menu ul.menus li{display:block;width:100%}
+#menu a.prett,#menu a.trigger2{padding:0 27px 0 20px}
+#menu a.prett::after{width:0;height:0;border-width:6px 5px;border-style:solid;border-color:#fff transparent transparent;position:absolute;top:23px;right:9px}
+#menu a.trigger2::after{border-color:transparent transparent transparent #fff;position:absolute;right:9px}
+#menu a.trigger2:hover::after{border-color:transparent transparent transparent #333;position:absolute;right:9px}
+#search{float:right;width:300px;margin:0;padding:10px 0}
+#searchform{color:gray;width:50%;height:30px;line-height:30px;transition:all .2s linear 0s;margin:0 auto;border:1px solid #ccc;border-radius:2px;overflow:hidden;position:relative}
+.search-button,.search-button:hover{background-color:#4D90FE;color:#fff;width:60px;height:40px;line-height:32px;padding:10px 0;text-align:center;border-radius:0 2px 2px 0;font-size:13px;cursor:pointer;border:none;position:absolute;top:-1px;right:-1px}
+#search-form{width:100%;height:30px;line-height:30px;padding:0 10px;-moz-box-sizing:border-box;box-sizing:border-box;border:none;font-size:16px;font-weight:300}
+#search-form,.comment-form p{-webkit-box-sizing:border-box}
+#search-form:focus{border:none;outline:0;color:#000}
+#searchform:hover{border:1px solid #aaa}
+#searchform:focus{border:1px solid #4D90FE;outline:0}
+#box{height:0;position:relative;transition:height .3s linear 0s}
+.search-icon{background:#0058ac;float:right;text-decoration:none;font-size:14px;font-weight:700;width:100%;height:40px;line-height:20px;position:relative;top:0;right:0;cursor:pointer;color:#fff}
+.search-icon:hover{color:#ef4444}
+input#feed-q-input.search-form{width: 230px;  margin-right: 70px;}
+
+#credit,a.more{text-align:center}
+#footer-wrapper{background:#0058ac;width:100%;color:#fff;font:15px Roboto,sans-serif;line-height:1.5em;overflow:hidden;margin:0;padding:0}
+#comments,#credit,.footer .widget-content,.footer h2{font-family:Roboto,sans-serif}
+.footer{float:left;width:31%;margin:10px}
+.footer .widget{margin-bottom:5px}
+.footer h2{background:0 0;font-size:22px;padding:0;margin-bottom:8px;line-height:1.3em;color:#f1f1f1}
+.footer .widget-content{line-height:1.5em;font-size:14px;color:#fff;font-weight:300}
+.footer ul{list-style:none;color:#EAE9E8;margin:0;padding:0}
+.footer li{text-indent:0;line-height:1.3em;margin:0;padding:0 20px 10px 0}
+.PopularPosts .widget-content,.popular-posts ul{margin:0}
+.footer a:link,.footer li a:visited{color:#fff;text-decoration:none}
+.footer li a:hover{color:#bbb}
+#credit{background:#333;font-size:14px;font-weight:300;color:#efefef;width:100%;overflow:hidden;padding:15px 0;line-height:20px}
+#credit a{color:#efefef;text-decoration:none}
+#credit a:hover{color:#fc0;text-decoration:none}
+
+#comments, .comment {display:none;}
+.post-comment-link { visibility: hidden; }
+
+a.more{background:#007eff;border:1px solid #0b6bce;border-radius:2px;font-size:16px;font-weight:700;color:#fff;padding:2px 6px;margin-top:-4px}
+a.more:hover{background:#0f6bc9}
+.post-icons{padding:0;font-size:150%;position:absolute;color:#555;top:30px;right:0;cursor:pointer}
+.post-icons a{color:#555}
+.post-snippet {display:none}
+#blog-pager,#comments,#sidebar-wrapper,.blog-pager,.post-upper .thumb-post{display:none}
+.post-upper{text-align:center;margin:0 20px;padding:20px 0;border-bottom:1px solid #ddd}
+.post-upper p.title{font-size:42px;font-weight:900;line-height:1.3em;color:#222;margin:0;padding:0;text-transform:capitalize}
+.post h1,.post h2{margin:0;padding:0;height:0;font-size:0;line-height:0}
+.main-wrapper,.outer-wrapper{width:100%;border:none}
+.postmeta{width:100%;margin-bottom:10px}
+.post{padding:0 20px 20px}
+
+@media screen and (max-width:1024px){.content-wrapper{width:100%;padding:0}
+.main-wrapper{width:100%}
+#sidebar-wrapper {padding-right:0}
+}
+@media screen and (max-width:980px){.content-wrapper{width:100%;padding:0}
+#menu li a {font-size: 14px;}
+}
+@media screen and (max-width:800px){.content-wrapper{width:100%;padding:0}
+#menu li a { font-size: 10px;}
+#header-wrapper{text-align:center;}
+.logo-blog{position:relative;margin-top:10px;}
+.logo-blog img{margin-top:10px;}
+#header{float:none;margin-top:0;text-align:center;width:100%;max-width:none}
+#header h1,#header p{margin-right:0}
+#header .description{margin:0}
+#header2,#header2 img{float:none;text-align:center;width:100%;margin:0 auto}
+.main-wrapper{width:100%}
+#sidebar-wrapper{display:none}
+.post{padding:0 20px 20px}
+.halaman{margin-right:20px}
+#comments{padding:5px 20px 0}
+.footer{width:30%}
+}
+@media screen and (max-width:770px){.page-menu{height:40px}
+#header2,#header2 img{text-align:center;max-width:auto;height:auto;width:100%;margin-bottom: 10px;}
+.btn-sidebaramp{display:inline-block;background-image:url(https://3.bp.blogspot.com/-mOwLvkS4irQ/WBtbprjBLaI/AAAAAAAAG90/f0l97MZwrogrCu5x-pY5a7LqirD_Uh1rwCLcB/s1600/mobile-menu.png);background-repeat:no-repeat;background-size:30px 24px;background-position:center center;background-color:rgb(23, 143, 187);width:40px;height:40px;border:none;position:absolute;top:0;right:5px;z-index:1001;}
+ amp-sidebar{width:240px;background-color: #fff;}
+ amp-sidebar-image{line-height:100px;vertical-align:middle}
+.amp-close-image{top:15px;left:20px;cursor:pointer;}
+ amp-sidebar ul{padding:0 0 0 20px;list-style:none}
+ amp-sidebar li{margin-bottom:10px;list-style:none}
+ amp-sidebar button{margin-left:20px}
+input#feed-q-input.search-form{width: 200px;}
+#menu,#menu-wrapper,.search-icon,.search-button, .search-button:hover,.page-menu li a {display:none}
+}
+@media screen and (max-width:600px){.footer{width:100%}
+}
+@media screen and (max-width:480px){#title img,.post img{max-width:100%;height:auto;width:auto}
+#searchform{width:90%}
+.post-icons,.printfriendly,.submit-email{display:none}
+.post-upper p.title{font-size:18px}
+}
+@media screen and (max-width:320px){
+.comment_admin .comment_author_flag{display:none}
+}
+@media screen and (max-width:240px){.logo-blog img{width:100%;height:auto;margin:0 auto}
+.post{padding:10px}
+}
+
+/*]]>*/
+</style>
+<style amp-boilerplate='amp-boilerplate'>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate='amp-boilerplate'>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async='async' src='https://cdn.ampproject.org/v0.js'></script>
+<script async='async' custom-element='amp-form' src='https://cdn.ampproject.org/v0/amp-form-0.1.js'></script>
+<script async='async' custom-element='amp-social-share' src='https://cdn.ampproject.org/v0/amp-social-share-0.1.js'></script>
+<script async='async' custom-element='amp-iframe' src='https://cdn.ampproject.org/v0/amp-iframe-0.1.js'></script>
+<script async='async' custom-element='amp-list' src='https://cdn.ampproject.org/v0/amp-list-0.1.js'></script>
+<script async='async' custom-element='amp-analytics' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js'></script>
+<script async='async' custom-element='amp-carousel' src='https://cdn.ampproject.org/v0/amp-carousel-0.1.js'></script>
+<script async='async' custom-element='amp-ad' src='https://cdn.ampproject.org/v0/amp-ad-0.1.js'></script>
+<script async='async' custom-element='amp-accordion' src='https://cdn.ampproject.org/v0/amp-accordion-0.1.js'></script>
+
+<script>
+  (function() {
+    var cx = 'partner-pub-9973004372884544:8614199317';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+</head>
+
+<body itemscope='itemscope' itemtype='http://schema.org/WebPage'>
+
+<noscript>
+<p class='att-javascript'>
+This site requires JavaScript. This message will only be visible if you have it disabled.
+</p>
+</noscript>
+<button class='btn-sidebaramp' on='tap:sidebar.toggle'></button>
+<amp-sidebar id='sidebar' layout='nodisplay' side='right'>
+<amp-img alt='close sidebar' class='amp-close-image' height='20' on='tap:sidebar.close' role='button' src='https://ampbyexample.com/img/ic_close_black_18dp_2x.png' tabindex='0' width='20'></amp-img>
+<nav>
+<ul>
+<li><a href='/'>Home</a></li>
+<li><a href='http://cloud.intanews.my.id/p/about.html' itemprop='url' title='About'>About</a></li>
+<li><a href='http://intanews.my.id/cloud/blogger-file/sitemap-cloud.html' itemprop='url' title='Sitemap'>Sitemap</a></li>
+<li><a href='http://cloud.intanews.my.id/p/pasang-iklan-dan-jasa-review.html' itemprop='url' title='Pasang Iklan/Jasa Review'>Pasang Iklan/Jasa Review</a></li>
+<li><a href='http://www.weracyber.net/' itemprop='url' title='Wera Cyber'>Wera Cyber</a></li>
+<li><a href='http://cloud.intanews.my.id/p/kumpulan.html' itemprop='url' title='Bitcoin Gratis'>Bitcoin Gratis</a></li>
+<li>
+<div class='search-wrapper'>
+<div id='search-box'>
+<div itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/WebSite'>
+<meta content='http://cloud.intanews.my.id' itemprop='url'/>
+<form action='https://cdn.rawgit.com/sudibjo/amp-project/blob/master/search-fix.html' itemprop='potentialAction' itemscope='itemscope' itemtype='http://schema.org/SearchAction' method='get' target='_blank'>
+<meta content='https://cdn.rawgit.com/sudibjo/amp-project/blob/master/search-fix.html?q={q}' itemprop='target'/>
+<input class='search-form' id='feed-q-input' itemprop='query-input' name='q' placeholder='Search Enter' required='required' type='text'/>
+<button class='search-button' title='Search' type='submit'><i class='material-icons'>youtube_searched_for</i></button>
+</form></div>
+</div>
+<div class='clear'></div>
+</div>
+</li>
+</ul>
+</nav>
+</amp-sidebar>
+<div itemprop='mainContentOfPage' itemscope='itemscope' itemtype='https://schema.org/WebPageElement'>
+<div class='content-wrapper'>
+<div class='search-icon'>
+<div id='search'>
+<form action='https://cdn.rawgit.com/sudibjo/amp-project/blob/master/search-fix.html' itemprop='potentialAction' itemscope='itemscope' itemtype='http://schema.org/SearchAction' method='get' target='_blank'>
+<meta content='https://cdn.rawgit.com/sudibjo/amp-project/blob/master/search-fix.html?q={q}' itemprop='target'/>
+<input class='search-form' id='feed-q-input' itemprop='query-input' name='q' placeholder='Search' required='required' type='text'/>
+<button class='search-button' title='Search' type='submit'><i class='material-icons'>youtube_searched_for</i></button>
+</form>
+</div>
+</div>
+<div class='clear'></div>
+<div class='page-menu'>
+</div>
+<div id='box'>
+<div itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WebSite'>
+<meta content='http://cloud.intanews.my.id/' itemprop='url'/>
+<div class='clear'></div>
+</div>
+</div>
+<div class='clear'></div>
+<header itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPHeader'>
+<div id='header-wrapper'>
+<div class='header section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title' itemprop='headline'>
+<a href='http://cloud.intanews.my.id/' itemprop='url' title='Cloud Intanews - Hosting - Blogging - Bitcoin'><span itemprop='name'>Cloud Intanews - Hosting - Blogging - Bitcoin</span></a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description' itemprop='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+<div class='clear'></div>
+<div class='logo-blog'>
+<a href='http://cloud.intanews.my.id/' itemprop='url' title=''><span itemprop='name'><amp-img alt='Logo' height='90' src='https://3.bp.blogspot.com/-gGPNFbVU9BI/WCRz4av1voI/AAAAAAAAG-8/KGnEh8Sfoxw1PtQfG-0G427BA-OSXhEHgCLcB/s320/cloud%2Bintanews.png' title='' width='210'></amp-img>
+</span></a>
+</div>
+<div class='header section' id='header2'></div>
+<div class='clear'></div>
+</div>
+</header>
+<!-- /header-wrapper -->
+<div id='menu-wrapper'>
+<div id='menu'>
+<nav itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement'>
+<input data-target='#nav-ul' id='nav-icon' type='checkbox'/>
+<label><i class='fa fa-bars'></i><span>Navigation</span></label>
+<ul id='nav-ul'>
+<li><a href='/' title='Home'><i class='material-icons md24'>home</i> Home</a></li>
+<li><a href='http://cloud.intanews.my.id/p/about.html' title='About'><i class='material-icons md24'>tab</i> About</a></li>
+<li><a href='http://cloud.intanews.my.id/p/pasang-iklan-dan-jasa-review.html' itemprop='url' title='Pasang Iklan/Jasa Review'><i class='material-icons'>assessment</i> Pasang Iklan/Jasa Review</a></li>
+<li><a href='http://intanews.my.id/cloud/blogger-file/sitemap-cloud.html' title='Sitemap'><i class='material-icons'>view_list</i> Sitemap</a></li>
+<li><a href='http://www.weracyber.net/' title='Wera Cyber'><i class='material-icons md24'>input</i> Wera Cyber</a></li>
+<li><a href='/p/kumpulan.html' title='Bitcoin Gratis'><i class='material-icons md24'>work</i> Bitcoin Gratis</a></li>
+</ul>
+</nav>
+</div></div>
+<div class='outer-wrapper'>
+<div class='post-upper'>
+<p class='title'>
+Pencarian Kustom
+</p>
+<div class='thumb-post'></div>
+</div>
+<div class='main-wrapper' itemscope='itemscope' itemtype='https://schema.org/Blog'>
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<article class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content=' ' property='twitter:description'/>
+<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+<meta content='https://3.bp.blogspot.com/-x_mMtgFf6XE/VlhLxwdLekI/AAAAAAAAj3c/N7fRz1lbMSg/s1600/no-thumbnail.jpg' itemprop='url'/>
+<meta content='700' itemprop='width'/>
+<meta content='700' itemprop='height'/>
+</div>
+<div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
+<div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+<meta content='http://2.bp.blogspot.com/-z_neu_jdmF4/VbVr4STl7mI/AAAAAAAAhiQ/-ykM7LgN2Es/s600/logo-ka.png' itemprop='url'/>
+<meta content='600' itemprop='width'/>
+<meta content='600' itemprop='height'/>
+</div>
+<meta content='Cloud Intanews - Hosting - Blogging - Bitcoin' itemprop='name'/>
+</div>
+<h2 class='post-title entry-title' itemprop='headline'>
+<a href='http://cloud.intanews.my.id/p/pencarian-kustom.html' itemprop='url mainEntityOfPage' title='Pencarian Kustom'>Pencarian Kustom</a>
+</h2>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<meta content=' ' itemprop='description'/>
+<div class='post-body entry-content' id='post-body-4380261545433814941' itemprop='articleBody'>
+<gcse:search></gcse:search>
+<div class='clear'></div>
+</div>
+</article>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='clear'></div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+</div>
+</div></div>
+</div>
+
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class='clr'></div>
+</div>
+<footer itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPFooter'>
+<div id='footer-wrapper'>
+<div class='footer section' id='footer1'>
+<h2 class='title'>Deskripsi Blog</h2>
+Berbagi informasi mengenai promo hosting dan domain, tips blogging dan SEO, mining bitcoin dan altcoin, opsi bisnis online serta review.
+</div>
+<div class='footer section' id='footer2'>
+<h2 class='title'>Follow Me</h2>
+<a href="http://www.facebook.com/IntanSudibyo" rel="nofollow" target="_blank"><i class="material-icons">account_box</i> Facebook</a><br/>
+<a href="http://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=IntanSudibjo" rel="nofollow" target="_blank"><i class="material-icons">textsms</i> Twitter</a><br/>
+<a href="https://plus.google.com/+IntanSudibjo" rel="nofollow" target="_blank"><i class="material-icons">mail</i> Google Plus</a><br/>
+<a href="https://id.linkedin.com/in/intan-sudibjo-36a07696" rel="nofollow" target="_blank"><i class="material-icons">dashboard</i> LinkedIn</a>
+</div>
+<div class='footer section' id='footer3'>
+<h2>Labels</h2>
+<ul class='label-show'>
+<li>
+<a dir='ltr' href='http://cloud.intanews.my.id/search/label/Bitcoin'>Bitcoin</a>
+</li>
+<li>
+<a dir='ltr' href='http://cloud.intanews.my.id/search/label/Blogging'>Blogging</a>
+</li>
+<li>
+<a dir='ltr' href='http://cloud.intanews.my.id/search/label/Domain'>Domain</a>
+</li>
+<li>
+<a dir='ltr' href='http://cloud.intanews.my.id/search/label/Hosting'>Hosting</a>
+</li>
+<li>
+<a dir='ltr' href='http://cloud.intanews.my.id/search/label/Opsi%20Bisnis'>Opsi Bisnis</a>
+</li>
+<li>
+<a dir='ltr' href='http://cloud.intanews.my.id/search/label/Review'>Review</a>
+</li>
+<li>
+<a dir='ltr' href='http://cloud.intanews.my.id/search/label/SEO'>SEO</a>
+</li>
+<li>
+<a dir='ltr' href='http://cloud.intanews.my.id/search/label/Tips'>Tips</a>
+</li>
+</ul>
+</div>
+<div class='footer no-items section' id='footer4'>
+</div>
+<div class='clear'></div>
+</div>
+<div id='credit'>
+Copyright &#169; 2016. <a class='sitename' href='http://cloud.intanews.my.id/' title='Cloud Intanews - Hosting - Blogging - Bitcoin'>Cloud Intanews - Hosting - Blogging - Bitcoin</a> - All Rights Reserved<br/>Template by <a href='http://www.kompiajaib.com/' title='Kompi Ajaib'>Kompi Ajaib</a> - AMP HTML Validated by <a href='/'>Intan Sudibjo</a></div><div class='clear'></div>
+</footer>
+</div>
+</div>
+</body>
+</HTML>
